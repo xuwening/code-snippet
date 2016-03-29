@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14A388a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3KL-ms-n57">
+                                <rect key="frame" x="237" y="126" width="126" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.67898453830000005" blue="0.1216240799" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="7H6-ny-8nM"/>
+                                    <constraint firstAttribute="width" constant="126" id="NlP-Yg-b1R"/>
+                                </constraints>
+                                <state key="normal" title="旋转">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="rotationAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P3f-Vh-7BH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qrV-dc-o7J">
+                                <rect key="frame" x="237" y="285" width="126" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.67898453830000005" blue="0.1216240799" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="126" id="dFI-41-RyQ"/>
+                                    <constraint firstAttribute="height" constant="30" id="xxC-m2-cTQ"/>
+                                </constraints>
+                                <state key="normal" title="缩放">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="scaleAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NhY-4J-am2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LVU-D3-w5U">
+                                <rect key="frame" x="237" y="361" width="126" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.67898453830000005" blue="0.1216240799" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="126" id="X4o-Hn-yyZ"/>
+                                    <constraint firstAttribute="height" constant="30" id="tvm-WK-BgR"/>
+                                </constraints>
+                                <state key="normal" title="颜色渐变">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeColorAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dy9-jW-C9S"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GVE-3I-HEn">
+                                <rect key="frame" x="237" y="429" width="126" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.67898453830000005" blue="0.1216240799" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="126" id="isa-ag-4bw"/>
+                                    <constraint firstAttribute="height" constant="30" id="pGz-Nd-rhR"/>
+                                </constraints>
+                                <state key="normal" title="透明度">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="alphaAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I9m-fZ-jE1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9qB-jq-bvp">
+                                <rect key="frame" x="237" y="211" width="126" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.67898453830000005" blue="0.1216240799" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="5xg-sp-FMM"/>
+                                    <constraint firstAttribute="width" constant="126" id="PyJ-u0-ffX"/>
+                                </constraints>
+                                <state key="normal" title="移动">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="moveAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CpY-Yz-Pl2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="9qB-jq-bvp" secondAttribute="centerX" id="D2y-GD-0gN"/>
+                            <constraint firstAttribute="centerX" secondItem="GVE-3I-HEn" secondAttribute="centerX" id="F7e-5A-jWh"/>
+                            <constraint firstAttribute="centerX" secondItem="3KL-ms-n57" secondAttribute="centerX" id="LTe-I3-qVM"/>
+                            <constraint firstItem="9qB-jq-bvp" firstAttribute="top" secondItem="3KL-ms-n57" secondAttribute="bottom" constant="55" id="MSX-Ou-2bW"/>
+                            <constraint firstItem="3KL-ms-n57" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="SVg-Ft-5md"/>
+                            <constraint firstItem="LVU-D3-w5U" firstAttribute="top" secondItem="qrV-dc-o7J" secondAttribute="bottom" constant="46" id="XwF-Ou-iZc"/>
+                            <constraint firstAttribute="centerY" secondItem="qrV-dc-o7J" secondAttribute="centerY" id="fsw-pp-BNF"/>
+                            <constraint firstItem="GVE-3I-HEn" firstAttribute="top" secondItem="LVU-D3-w5U" secondAttribute="bottom" constant="38" id="hSq-mX-SSt"/>
+                            <constraint firstItem="qrV-dc-o7J" firstAttribute="top" secondItem="9qB-jq-bvp" secondAttribute="bottom" constant="44" id="ju3-hb-jzu"/>
+                            <constraint firstAttribute="centerX" secondItem="LVU-D3-w5U" secondAttribute="centerX" id="l59-aD-Wa5"/>
+                            <constraint firstAttribute="centerX" secondItem="qrV-dc-o7J" secondAttribute="centerX" id="pyX-d6-UwB"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="SVg-Ft-5md"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="alphaButton" destination="GVE-3I-HEn" id="2E5-Qn-B5E"/>
+                        <outlet property="colorButton" destination="LVU-D3-w5U" id="9z8-wq-dbq"/>
+                        <outlet property="moveButton" destination="9qB-jq-bvp" id="Ol5-Pu-tAr"/>
+                        <outlet property="rotateButton" destination="3KL-ms-n57" id="6Hz-DC-6I8"/>
+                        <outlet property="scaleButton" destination="qrV-dc-o7J" id="21o-nc-8QK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

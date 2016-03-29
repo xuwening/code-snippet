@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14A388a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4xg-me-oFw">
+                                <rect key="frame" x="255" y="231" width="91" height="30"/>
+                                <state key="normal" title="CoverVertical">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="coverVerticalAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LCD-Rd-wJv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d7s-aD-Odb">
+                                <rect key="frame" x="253" y="285" width="95" height="30"/>
+                                <state key="normal" title="FlipHorizontal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flipHorizontalAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZI6-c9-5bV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ayx-H8-01B">
+                                <rect key="frame" x="251" y="323" width="98" height="30"/>
+                                <state key="normal" title="CrossDissolve">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="crossDissolveAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c3B-Of-uDY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1qD-yS-MZ4">
+                                <rect key="frame" x="264" y="361" width="72" height="30"/>
+                                <state key="normal" title="PartialCurl">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="partialCurlAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eCK-kb-iXO"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ssD-KD-eLU">
+                                <rect key="frame" x="85" y="90" width="431" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="431" id="dYb-xD-8An"/>
+                                    <constraint firstAttribute="width" secondItem="ssD-KD-eLU" secondAttribute="height" multiplier="431:28" id="g1e-xs-50b"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="FullScreen"/>
+                                    <segment title="PageSheet"/>
+                                    <segment title="FromSheet"/>
+                                    <segment title="CurrentContext"/>
+                                </segments>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="dYb-xD-8An"/>
+                                        <exclude reference="g1e-xs-50b"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="segmentAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="CjF-mR-MZS"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="d7s-aD-Odb" secondAttribute="centerX" id="Iyo-uE-oyf"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" secondItem="ssD-KD-eLU" secondAttribute="width" id="KYd-LN-5aI"/>
+                            <constraint firstItem="Ayx-H8-01B" firstAttribute="top" secondItem="d7s-aD-Odb" secondAttribute="bottom" constant="8" id="Qfv-cJ-XmH"/>
+                            <constraint firstAttribute="centerX" secondItem="4xg-me-oFw" secondAttribute="centerX" id="dXY-tX-bNT"/>
+                            <constraint firstAttribute="centerX" secondItem="ssD-KD-eLU" secondAttribute="centerX" id="gVv-tz-a3B"/>
+                            <constraint firstItem="d7s-aD-Odb" firstAttribute="top" secondItem="4xg-me-oFw" secondAttribute="bottom" constant="24" id="j6b-lW-fyE"/>
+                            <constraint firstItem="1qD-yS-MZ4" firstAttribute="top" secondItem="Ayx-H8-01B" secondAttribute="bottom" constant="8" id="lhk-u3-HMy"/>
+                            <constraint firstAttribute="centerX" secondItem="1qD-yS-MZ4" secondAttribute="centerX" id="twX-LY-RdK"/>
+                            <constraint firstItem="4xg-me-oFw" firstAttribute="top" secondItem="ssD-KD-eLU" secondAttribute="bottom" constant="113" id="uRK-hb-7BV"/>
+                            <constraint firstAttribute="centerY" secondItem="d7s-aD-Odb" secondAttribute="centerY" id="uYL-dQ-ajR"/>
+                            <constraint firstAttribute="centerX" secondItem="Ayx-H8-01B" secondAttribute="centerX" id="vBA-4s-jPb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ui_segment" destination="ssD-KD-eLU" id="eXV-kV-t8r"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="193" y="297"/>
+        </scene>
+        <!--Present Viewcontroller-->
+        <scene sceneID="7GE-Dg-IOX">
+            <objects>
+                <viewController storyboardIdentifier="PresentViewcontroller" id="KOQ-Ji-o69" customClass="PresentViewcontroller" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="t8Y-G9-GDp"/>
+                        <viewControllerLayoutGuide type="bottom" id="0pd-yi-G8x"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Gi3-KP-tsc">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oqm-uS-5sC">
+                                <rect key="frame" x="274" y="285" width="52" height="30"/>
+                                <state key="normal" title="dismiss">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="dismissAction:" destination="KOQ-Ji-o69" eventType="touchUpInside" id="boz-6u-mSB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="oqm-uS-5sC" secondAttribute="centerX" id="05n-dZ-ryh"/>
+                            <constraint firstAttribute="centerY" secondItem="oqm-uS-5sC" secondAttribute="centerY" id="8EF-e6-ytE"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YgA-Sb-ZQ8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="865" y="297"/>
+        </scene>
+    </scenes>
+</document>

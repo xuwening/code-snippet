@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14A388a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1r4-xh-fy5">
+                                <rect key="frame" x="35" y="28" width="118" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.56231772830000004" blue="0.13439270680000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="z旋转">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="rotateAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JDd-Ql-C12"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3s3-Pm-3ly">
+                                <rect key="frame" x="35" y="265" width="118" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.56231772830000004" blue="0.13439270680000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="移动">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="moveAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s3B-MR-q2n"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bSS-WO-qxw">
+                                <rect key="frame" x="35" y="326" width="118" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.56231772830000004" blue="0.13439270680000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="缩放">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="scaleAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KaW-GL-fTY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jpg-4h-03X">
+                                <rect key="frame" x="35" y="390" width="118" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.56231772830000004" blue="0.13439270680000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="颜色渐变">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="colorAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YDt-hq-8m0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zWs-Tz-9Sr">
+                                <rect key="frame" x="35" y="449" width="118" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.56231772830000004" blue="0.13439270680000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="透明度">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="alphaAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K6I-ir-Oc8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZbE-cy-JIt">
+                                <rect key="frame" x="35" y="107" width="118" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.56231772830000004" blue="0.13439270680000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="y旋转">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gw7-7i-MBS">
+                                <rect key="frame" x="35" y="187" width="118" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.56231772830000004" blue="0.13439270680000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="x旋转">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WEu-rm-9Lm">
+                                <rect key="frame" x="185" y="265" width="118" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.56231772830000004" blue="0.13439270680000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="fade">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="curlUpButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W3Z-vt-dHg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sgo-aL-3Pw">
+                                <rect key="frame" x="185" y="326" width="118" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.56231772830000004" blue="0.13439270680000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="reveal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WuK-E5-pkb">
+                                <rect key="frame" x="185" y="390" width="118" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.56231772830000004" blue="0.13439270680000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="moveIn">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="curlUpButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MWm-l6-GRw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eY7-XI-bXN">
+                                <rect key="frame" x="185" y="449" width="118" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.56231772830000004" blue="0.13439270680000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="push">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="alphaButton" destination="zWs-Tz-9Sr" id="V6M-FG-GFE"/>
+                        <outlet property="colorButton" destination="Jpg-4h-03X" id="dFM-UL-FKV"/>
+                        <outlet property="fadeButton" destination="WEu-rm-9Lm" id="iZt-cu-p2C"/>
+                        <outlet property="moveButton" destination="3s3-Pm-3ly" id="6Zq-zv-FJx"/>
+                        <outlet property="moveInButton" destination="WuK-E5-pkb" id="dDV-GV-Rzt"/>
+                        <outlet property="oglFlipButton" destination="eY7-XI-bXN" id="lnV-2X-dPL"/>
+                        <outlet property="revealButton" destination="Sgo-aL-3Pw" id="avA-fC-WNF"/>
+                        <outlet property="rotateButton" destination="1r4-xh-fy5" id="h5P-aL-4Fn"/>
+                        <outlet property="scaleButton" destination="bSS-WO-qxw" id="gl9-8J-1xU"/>
+                        <outlet property="xRotateButton" destination="gw7-7i-MBS" id="3Dg-Yy-BAg"/>
+                        <outlet property="yRotateButton" destination="ZbE-cy-JIt" id="a0e-mM-NS8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
