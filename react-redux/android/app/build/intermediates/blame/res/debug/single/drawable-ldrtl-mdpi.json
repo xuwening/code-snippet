@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/hong/Documents/sourcecode/reactNative/reactDemo/android/app/build/intermediates/res/merged/debug/drawable-ldrtl-mdpi/abc_ic_ab_back_mtrl_am_alpha.png",
+        "source": "/Users/hong/.android/build-cache/a927e6b36634bbe5f0b13782a1eddacce01d2af0/output/res/drawable-ldrtl-mdpi/abc_ic_ab_back_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "/Users/hong/Documents/sourcecode/reactNative/reactDemo/android/app/build/intermediates/res/merged/debug/drawable-ldrtl-mdpi/abc_ic_menu_copy_mtrl_am_alpha.png",
+        "source": "/Users/hong/.android/build-cache/a927e6b36634bbe5f0b13782a1eddacce01d2af0/output/res/drawable-ldrtl-mdpi/abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "/Users/hong/Documents/sourcecode/reactNative/reactDemo/android/app/build/intermediates/res/merged/debug/drawable-ldrtl-mdpi/abc_ic_menu_cut_mtrl_alpha.png",
+        "source": "/Users/hong/.android/build-cache/a927e6b36634bbe5f0b13782a1eddacce01d2af0/output/res/drawable-ldrtl-mdpi/abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
+        "merged": "/Users/hong/Documents/sourcecode/reactNative/reactDemo/android/app/build/intermediates/res/merged/debug/drawable-ldrtl-mdpi/abc_spinner_mtrl_am_alpha.9.png",
+        "source": "/Users/hong/.android/build-cache/a927e6b36634bbe5f0b13782a1eddacce01d2af0/output/res/drawable-ldrtl-mdpi/abc_spinner_mtrl_am_alpha.9.png"
+    }
+]

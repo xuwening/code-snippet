@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/hong/Documents/sourcecode/reactNative/reactDemo/android/app/build/intermediates/res/merged/debug/drawable-v21/abc_action_bar_item_background_material.xml",
+        "source": "/Users/hong/.android/build-cache/a927e6b36634bbe5f0b13782a1eddacce01d2af0/output/res/drawable-v21/abc_action_bar_item_background_material.xml"
+    },
+    {
+        "merged": "/Users/hong/Documents/sourcecode/reactNative/reactDemo/android/app/build/intermediates/res/merged/debug/drawable-v21/abc_btn_colored_material.xml",
+        "source": "/Users/hong/.android/build-cache/a927e6b36634bbe5f0b13782a1eddacce01d2af0/output/res/drawable-v21/abc_btn_colored_material.xml"
+    }
+]

@@ -1,0 +1,26 @@
+[
+    {
+        "outputFile": "/Users/hong/Documents/sourcecode/reactNative/reactDemo/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-port/values-port.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 55,
+                    "endOffset": 106
+                },
+                "from": {
+                    "file": "/Users/hong/.android/build-cache/a927e6b36634bbe5f0b13782a1eddacce01d2af0/output/res/values-port/values-port.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 280,
+                        "endColumn": 55,
+                        "endOffset": 331
+                    }
+                }
+            }
+        ]
+    }
+]
